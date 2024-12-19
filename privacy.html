@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website is about CSS Variables">
+    <title>CSS Variables</title>
+    <script src="brain.js"></script>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        nav {
+            background-color: #F7F7F7;
+        }
+
+        .navs {
+            display: inline;
+        }
+
+        .navs>ul {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        .navs ul>li {
+            padding: 5px 25px;
+            font-weight: 500;
+            font-size: larger;
+        }
+
+        .navs ul>li:hover {
+            color: orange;
+            cursor: pointer;
+        }
+
+        .button1 {
+            display: inline;
+            position: relative;
+            left: 550px;
+        }
+
+        .button1>a {
+            text-decoration: none;
+            background-color: #3484C9;
+            padding: 13px 25px;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .button2 {
+            display: inline-block;
+            min-width: 400px;
+            background-color: #FAA138;
+            padding: 13px 25px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .button2>a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        footer {
+            font-size: 15px;
+            display: flex;
+            background-color: #333333;
+            color: #ffffff;
+            padding:0px 30px;
+            align-items: first baseline;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 4px;
+        }
+
+        footer a::after {
+            content: "|";
+            color: white;
+        }
+        .copyright{
+            display: inline-flex;
+            align-items: first baseline;
+        }
+        .links{
+            position: relative;
+            left: 800px;
+            top: 1px;
+        }
+        .body{
+            font-size: 22px;
+            padding:10px 80px;
+        }
+        .copy-para{
+            line-height:15px;
+        }
+        .body a{
+            text-decoration: none;
+            color: rgb(13, 129, 175);
+        }
+        .body ul{
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navs">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="button1">
+                <a href="#">Book A Free Strategy Call</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="body">
+            <h1>Privacy Policy</h1>
+            <p>
+                To better protect your privacy we provide this notice explaining our online information practices and the choices you can make about the way your information is collected and used. To make this notice easy to find, we make it available at the bottom of every page of our website.
+            </p>
+            <p>
+                We appreciate that you are trusting us with information that is important to you, and we want to be transparent about how we use it. Here we describe the privacy practices for our website and you will learn about the data we collect, how we use it, the controls we give you over your information, and the measures we take to keep it safe. Specifically, we'll cover:
+            </p>
+            <ul>
+                <li><a href="#">Information We Collect</a></li>
+                <li><a href="#">Passive Data Collection</a></li>
+                <li><a href="#">Analytics and Advertising Services</a></li>
+                <li><a href="#">How We Use Information</a></li>
+                <li><a href="#">How Information Is Shared</a></li>
+                <li><a href="#">Your Rights To Access and Control Your Personal Data</a></li>
+                <li><a href="#">Data Retention</a></li>
+                <li><a href="#">Information Security</a></li>
+                <li><a href="#">California Privacy Rights</a></li>
+                <li><a href="#">Children's Privacy Protection</a></li>
+                <li><a href="#">Changes to This Policy</a></li>
+                <li><a href="#">How To Contact Us</a></li>
+            </ul>
+            <h1>
+                Information We Collect
+            </h1>
+            <p>
+                "Personal Information," as used in this Policy, is personally identifiable information, which is information that directly identifies an individual, such as first and last name, mailing address, email address, billing information, IP address or other online contact information, or telephone number.
+            </p>
+            <p>
+                We collect personal information in two ways. First, we collect information you provide to us in optional, voluntary submissions, such as sign-up forms, promotional signups, contact forms or live chat requests for customer service. Second, some personal information may be collected automatically. This is described below in "Passive Data Collection.”
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            &copy
+            <p>2023 Smile Marketing</p>
+        </div>
+        <div class="links">
+            <a href="#">CopyRight</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy</a>
+            <a href="#">Sitemap</a>
+        </div>
+    </footer>
+</body>
+
+</html>

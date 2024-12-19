@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website is about CSS Variables">
+    <title>CSS Variables</title>
+    <script src="brain.js"></script>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        nav {
+            background-color: #F7F7F7;
+        }
+
+        .navs {
+            display: inline;
+        }
+
+        .navs>ul {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        .navs ul>li {
+            padding: 5px 25px;
+            font-weight: 500;
+            font-size: larger;
+        }
+
+        .navs ul>li:hover {
+            color: orange;
+            cursor: pointer;
+        }
+
+        .button1 {
+            display: inline;
+            position: relative;
+            left: 550px;
+        }
+
+        .button1>a {
+            text-decoration: none;
+            background-color: #3484C9;
+            padding: 13px 25px;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .button2 {
+            display: inline-block;
+            min-width: 400px;
+            background-color: #FAA138;
+            padding: 13px 25px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .button2>a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        footer {
+            font-size: 15px;
+            display: flex;
+            background-color: #333333;
+            color: #ffffff;
+            padding:0px 30px;
+            align-items: first baseline;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 4px;
+        }
+
+        footer a::after {
+            content: "|";
+            color: white;
+        }
+        .copyright{
+            display: inline-flex;
+            align-items: first baseline;
+        }
+        .links{
+            position: relative;
+            left: 800px;
+            top: 1px;
+        }
+        .body{
+            font-size: 22px;
+            padding:10px 80px;
+        }
+        .copy-para{
+            line-height:15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navs">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="button1">
+                <a href="#">Book A Free Strategy Call</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="body">
+            <h1>Copyright Information</h1>
+            <p class="copy-para">
+                The content (images, text, sound and video files, programs and scripts) of this website are copyright to Smile Marketing.
+            </p>
+            <p class="copy-para">&copy; Smile Marketing – All Rights Reserved.</p>
+            <p class="copy-para">&copy; Vortala Pty Ltd</p>
+            <p class="copy-para">&copy; Jupiter Images, Inc. – All Rights Reserved.</p>
+            <p class="copy-para">&copy; ShutterStock, Inc. – All Rights Reserved.</p>
+            <p class="copy-para">&copy; Dreamstime.com. – All Rights Reserved.</p>
+            <p class="copy-para">&copy; iStock.com. – All Rights Reserved.</p>
+            <p class="copy-para">&copy; Getty Images – All Rights Reserved.</p>
+            <span>
+                The content of this website can be accessed, printed and downloaded in an unaltered form (unaltered including being stretched, compressed, colored or altered in any way so as to distort content from its original proportions or format) with copyright acknowledged, on a temporary basis for personal study which is not for a direct or indirect commercial use and any non-commercial use. Any content printed or downloaded may not be sold, licensed, transferred, copied or reproduced in whole or in part in any manner or in or on any media to any person without the prior written consent of Smile Marketing, including but not limited to:
+            </span>
+            <ul>
+                <li>transmission by any method</li>
+                <li>storage in any medium, system or program</li>
+                <li>display in any form</li>
+                <li>performance</li>
+                <li>hire, lease, rental or loan</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            &copy
+            <p>2023 Smile Marketing</p>
+        </div>
+        <div class="links">
+            <a href="#">CopyRight</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy</a>
+            <a href="#">Sitemap</a>
+        </div>
+    </footer>
+</body>
+
+</html>

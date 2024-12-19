@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website is about CSS Variables">
+    <title>CSS Variables</title>
+    <script src="brain.js"></script>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        nav {
+            background-color: #F7F7F7;
+        }
+
+        .navs {
+            display: inline;
+        }
+
+        .navs>ul {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        .navs ul>li {
+            padding: 5px 25px;
+            font-weight: 500;
+            font-size: larger;
+        }
+
+        .navs ul>li:hover {
+            color: orange;
+            cursor: pointer;
+        }
+
+        .button1 {
+            display: inline;
+            position: relative;
+            left: 550px;
+        }
+
+        .button1>a {
+            text-decoration: none;
+            background-color: #3484C9;
+            padding: 13px 25px;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .button2 {
+            display: inline-block;
+            min-width: 400px;
+            background-color: #FAA138;
+            padding: 13px 25px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .button2>a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        footer {
+            font-size: 15px;
+            display: flex;
+            background-color: #333333;
+            color: #ffffff;
+            padding:0px 30px;
+            align-items: first baseline;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 4px;
+        }
+
+        footer a::after {
+            content: "|";
+            color: white;
+        }
+        .copyright{
+            display: inline-flex;
+            align-items: first baseline;
+        }
+        .links{
+            position: relative;
+            left: 800px;
+            top: 1px;
+        }
+        .body{
+            font-size: 22px;
+            padding:10px 80px;
+        }
+        .copy-para{
+            line-height:15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navs">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="button1">
+                <a href="#">Book A Free Strategy Call</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="body">
+            <h1>Legal Information</h1>
+            <p>
+                The information contained in this Site is for general guidance on matters of interest only. While we have made every attempt to ensure that the information contained in this Site has been obtained from reliable sources, Smile Marketing™ is not responsible for any errors or omissions, or for the results obtained from the use of this information.
+            </p>
+            <p>
+                All information in this Site is provided "as is", with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied, including, but not limited to warranties of performance, merchantability and fitness for a particular purpose.
+            </p>
+            <p>
+                In no event will Smile Marketing, its related partnerships or corporations, or the partners, agents or employees thereof be liable to you or anyone else for any decision made or action taken in reliance on the information in this Site or for any consequential, special or similar damages, even if advised of the possibility of such damages.
+            </p>
+            <p>
+                Certain links in this Site connect to other Web Sites maintained by third parties over whom Smile Marketing has no control. Smile Marketing makes no representations as to the accuracy or any other aspect of information contained in other Web Sites.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            &copy
+            <p>2023 Smile Marketing</p>
+        </div>
+        <div class="links">
+            <a href="#">CopyRight</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy</a>
+            <a href="#">Sitemap</a>
+        </div>
+    </footer>
+</body>
+
+</html>

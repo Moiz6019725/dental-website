@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website is about CSS Variables">
+    <title>CSS Variables</title>
+    <script src="brain.js"></script>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        nav {
+            padding:0px 14px;
+            background-color: #F7F7F7;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navs {
+            display: inline;
+        }
+
+        .navs>ul {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        ul>li {
+            padding: 5px 25px;
+            font-weight: 500;
+            font-size: larger;
+        }
+
+        ul>li:hover {
+            color: orange;
+            cursor: pointer;
+        }
+
+        .button1 {
+            display: inline;
+        }
+
+        .button1>a {
+            text-decoration: none;
+            background-color: #3484C9;
+            padding: 13px 25px;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .button2 {
+            display: inline-block;
+            min-width: 400px;
+            background-color: #FAA138;
+            padding: 13px 25px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .button2>a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        ul {
+            list-style-type: " ▶";
+        }
+
+        .main-content h1 {
+            font-size: 45px;
+            color: #333333;
+        }
+
+        .main-content p {
+            font-size: 25px;
+        }
+
+        .main-content {
+            width: 100vw;
+            display: inline-flex;
+            flex-direction: row;
+            padding: 20px;
+            padding-top: 100px;
+        }
+
+        .main-content>.text {
+            width: 40%;
+            position: relative;
+            left: 30px;
+        }
+
+        .main-content>.image {
+            min-width: 40%;
+        }
+
+        .image>img {
+            width: 50vw;
+            position: absolute;
+            left: 600px;
+        }
+
+        .quote {
+            margin: 100px 0px;
+            background-color: #F9F9F9;
+            text-align: center;
+            padding: 35px 100px;
+            font-size: 25px;
+        }
+
+        .quote h2 {
+            font-weight: 500;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        footer {
+            font-size: 15px;
+            display: flex;
+            background-color: #333333;
+            color: #ffffff;
+            padding: 0px 30px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 4px;
+        }
+
+        footer a::after {
+            content: "|";
+            color: white;
+        }
+
+        .copyright {
+            display: inline-flex;
+            align-items: first baseline;
+        }
+        .links{
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navs">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="button1">
+                <a href="#">Book A Free Strategy Call</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="text">
+                <h1>A Custom Website
+                    Design You'll Be Proud
+                    to Call Your Own
+                </h1>
+                <p class="para">
+                    A design that captures that special something that prompts visitors to end their search and choose
+                    you.
+                </p>
+                <div class="button2">
+                    <a href="#">Book A Discovery Call ▶</a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="assets/header-mockup.png" alt="Can't be diaplayed.">
+            </div>
+        </div>
+        <div class="quote">
+            <blockquote>
+                <h2>
+                    An artful blending of emotional connection with a
+                    <br>
+                    feature set that turns visitors into new patients.
+                </h2>
+            </blockquote>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            &copy
+            <p>2023 Smile Marketing</p>
+        </div>
+        <div class="links">
+            <a href="copyright.html">CopyRight</a>
+            <a href="legal.html">Legal</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="#">Sitemap</a>
+        </div>
+    </footer>
+    <script>
+        console.log('Hello java');
+    </script>
+</body>
+
+</html>
